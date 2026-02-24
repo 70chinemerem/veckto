@@ -188,6 +188,51 @@ section {
 padding: 100px 8%;
 text-align: center;
 }
+#music{
+    padding: 100px 8%;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9));/* url('https://media.istockphoto.com/id/2224884515/photo/abstract-blue-geometric-shapes-shiny-design-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=lg6xTCTmoHmwbTuSGSp3wXkbdsSweQn5GN6G-lYScq8=') center/cover; */
+}
+#music h2 {
+    color: #ff2e63;
+    margin-bottom: 20px;
+}
+
+.music-items{
+      display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.music-items iframe {
+      width: 100%;
+    aspect-ratio: 12 / 4;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.music-items iframe:hover {
+    transform: scale(1.05);
+}
+
+#videos{
+    padding: 100px 8%;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://media.istockphoto.com/id/2224884515/photo/abstract-blue-geometric-shapes-shiny-design-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=lg6xTCTmoHmwbTuSGSp3wXkbdsSweQn5GN6G-lYScq8=') center/cover;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 8%;
+    margin-top: 30px;
+}
+.video-grid .video-items iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+}
 
 .gallery-grid {
 display: grid;
