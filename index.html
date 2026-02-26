@@ -22,6 +22,7 @@
 <meta name="twitter:image" content="images/hero.jpg">
 
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href="src/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -45,16 +46,16 @@
     <div class="menu-toggle">&#9776;</div>
     <ul class="nav-links">
         <div class="close-btn">&times;</div>
-        <li><a href="#about">Home</a></li>
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#music">Music</a></li>
-        <li><a href="#videos">Videos</a></li>
+        <li><a href="#videos">Content</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<div class="hero">
+<div class="hero" id="hero">
     <video id="bgVideo" class="bg-video" muted loop playsinline>
     <source src="src/video/landing.mp4" type="video/mp4">
 </video>
@@ -90,7 +91,10 @@
       <a href="#">TikTok</a>
     </div>
 
-    <a href="#contact" class="btn">Book Now</a>
+    <div class="profile-buttons">
+  <a href="#contact" class="btn primary">Book Now</a>
+  <a href="follow.html" class="btn secondary">Follow</a>
+</div>
   </aside>
 
   <!-- RIGHT: Scroll Content -->
@@ -102,14 +106,20 @@
     </section>
 
     <section class="content-block reveal">
-      <h2>Audiomack</h2>
+      <a href="#" class="stream-btn">
+    <i class="fas fa-music"></i> Audiomack
+  </a>
       <div class="music-grid">
         <!-- audiomack iframes -->
+         <div class="stream-buttons">
+
+</div>
       </div>
     </section>
 
     <section class="content-block reveal">
-      <h2>Apple Music</h2>
+       <a href="#" class="stream-btn">
+    <i class="fab fa-apple"></i> Apple Music</a>
       <div class="music-grid">
         <!-- apple music embeds -->
       </div>
@@ -189,14 +199,47 @@
 
 
 
-<section id="contact">
-<h2>Book Me</h2>
-<p>Email: booking@email.com</p>
-<p>Instagram: @artistname</p>
+<section class="contact-section">
+  <h2>Book & Contact</h2>
+  <p class="contact-sub">
+    For bookings, collaborations and business inquiries.
+  </p>
+
+  <div class="contact-box">
+    <a href="mailto:artist@email.com" class="contact-item">
+      📧 artist@email.com
+    </a>
+
+    <a href="tel:+2348000000000" class="contact-item">
+      📞 +234 800 000 0000
+    </a>
+
+    <a href="#" class="contact-item">
+      📍 Nigeria
+    </a>
+  </div>
 </section>
 
-<footer>
-<p>© 2026 Artist Name. All Rights Reserved.</p>
+<footer class="modern-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <h3>Artist Name</h3>
+      <p>Music • Comedy • Entertainment</p>
+    </div>
+
+    <div class="footer-links">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Artist Name. All rights reserved.
+  </div>
 </footer>
 
 <!-- Back To Top Button -->
