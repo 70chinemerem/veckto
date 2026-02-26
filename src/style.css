@@ -147,15 +147,25 @@ font-weight: 800;
     background: rgba(0, 0, 0, 0.6);
     pointer-events: none;  
 }
+.btn-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 #enterBtn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
     background: #ff2e63;
-    padding: 15px 30px;
+
     border-radius: 30px;
     text-decoration: none;
     color: white;
-    margin-right: 10px;
+
     transition: 0.3s;
-    display: flex;
+
 }
 .hero.cinematic {
     animation: heroZoom 10s ease forwards;
@@ -183,29 +193,87 @@ transition: 0.3s;
 .btn:hover {
 background: #e02655;
 }
+.about-wrapper {
+  padding: 20px;
+  border-radius: 20px;
+}
 
+.about-container {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Sticky profile */
+.about-profile {
+padding: 100px 5%;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 20px;
+  flex: 1;
+  position: sticky;
+  top: 120px; /* distance from top when sticking */
+}
+
+.about-profile img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.about-content {
+  flex: 2;
+}
 section {
 padding: 100px 8%;
 text-align: center;
 }
+/* .music-countainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+.music-profile {
+    flex: 1;
+    padding: 100px 5%;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.05);
+      border: 1px solid #e02655;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      flex: 1;
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+    border-radius: 20px;
+      position: sticky;
+     top: 120px; distance from top when sticking
+}
+.music-profile img {
+  width: 100%;
+  border-radius: 20px;
+}
 #music{
     padding: 100px 8%;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9));/* url('https://media.istockphoto.com/id/2224884515/photo/abstract-blue-geometric-shapes-shiny-design-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=lg6xTCTmoHmwbTuSGSp3wXkbdsSweQn5GN6G-lYScq8=') center/cover; */
-}
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9));}
 #music h2 {
     color: #ff2e63;
     margin-bottom: 20px;
+}
+.embed .music-items{
+    flex: 2;
+
 }
 
 .music-items{
       display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    padding: 0 8%;
+    margin-top: 30px;
 }
 .music-items iframe {
       width: 100%;
-    aspect-ratio: 12 / 4;
+    aspect-ratio: 16 / 6;
     border-radius: 10px;
     border: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -232,6 +300,21 @@ text-align: center;
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 10px;
+} */
+
+.music-grid,
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.music-grid iframe,
+.video-grid iframe {
+  width: 100%;
+  border-radius: 15px;
+  aspect-ratio: 16 / 9;
+  border: none;
 }
 
 .gallery-grid {
@@ -249,6 +332,16 @@ transition: 0.3s;
 
 .gallery-grid img:hover {
 transform: scale(1.05);
+}
+@media (max-width: 900px){
+  .artist-layout {
+    flex-direction: column;
+  }
+
+  .artist-profile {
+    position: relative;
+    top: 0;
+  }
 }
 
 /* Mobile */
@@ -363,4 +456,61 @@ display: block;
 
 #main-content.show {
     opacity: 1;
+}
+
+.artist-layout {
+  display: flex;
+  gap: 60px;
+  padding: 120px 8%;
+  align-items: flex-start;
+}
+
+.artist-profile {
+  flex: 1;
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.artist-profile img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.artist-content {
+  flex: 2;
+}
+
+.content-block {
+  margin-bottom: 120px;
+}
+
+.content-block h2 {
+  color: #ff2e63;
+  margin-bottom: 20px;
+}
+.content-block p {
+  line-height: 1.6;
+  color: #ccc;
+}
+
+
+/* hidden state */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+/* visible state */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
