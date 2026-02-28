@@ -1,21 +1,4 @@
 
-
-window.addEventListener("load", function () {
-
-    console.log("JS is working");
-
-    const loader = document.getElementById("loader");
-    const content = document.getElementById("main-content");
-
-    if (loader && content) {
-        setTimeout(() => {
-            loader.classList.add("hidden");
-            content.classList.add("show");
-        }, 1200);
-    }
-
-});
-
 /* SAFE NAV TOGGLE */
 
 const toggle = document.querySelector(".menu-toggle");
