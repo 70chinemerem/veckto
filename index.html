@@ -46,7 +46,7 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
-<section class="hero">
+<section id="hero" class="hero">
   <div class="hero-content">
              <div class="hero-image">
       <!-- <img src="src/images/mars.jpeg" class="float-img img-left" alt="float-img img-left">
@@ -127,7 +127,12 @@
 
     <div class="profile-buttons">
   <a href="#contact" class="btn primary">Book Now</a>
-  <a href="follow.html" class="btn secondary">Follow</a>
+  <a href="" class="btn secondary">Follow</a>
+  </div>
+  <!-- Scroll indicator -->
+  <div class="profile-scroll-indicator" id="scrollIndicator">
+    <span>Scroll</span>
+    <i class="fas fa-chevron-down"></i>
   </div>
 </div>
   </aside>
@@ -237,40 +242,198 @@
 
 
 
-<section class="contact-section">
-  <h2>Book & Contact</h2>
-  <p class="contact-sub">
-    For bookings, collaborations and business inquiries.
-  </p>
+<!-- <section class="contact-section reveal" id="contact">
+  <div class="contact-wrapper">
+    
+    <h2>Let’s Work Together</h2>
+    <p class="contact-sub">
+      Available for bookings, collaborations & projects.
+    </p>
+              <form id="contact-form" class="contact-form">
 
-  <div class="contact-box">
-    <a href="mailto:artist@email.com" class="contact-item">
-      📧 artist@email.com
-    </a>
+        <div class="input-group">
+          <input type="text" id="name" required>
+          <label>Your Name</label>
+        </div>
 
-    <a href="tel:+2348000000000" class="contact-item">
-      📞 +234 800 000 0000
-    </a>
+        <div class="input-group">
+          <input type="email" id="email" required>
+          <label>Your Email</label>
+        </div>
+        <div class="input-group">
+          <input type="text" id="subject" required>
+          <label>Subject</label>
+        </div>
+        <div class="input-group">
+          <input type="text" id="phone" required>
+          <label>Phone Number</label>
+        </div>
+        <div class="input-group">
+          <input type="text" id="event" required>
+          <label>Event Type</label>
+        </div>
 
-    <a href="#" class="contact-item">
-      📍 Nigeria
-    </a>
+        <div class="input-group">
+          <textarea id="message" rows="5" required></textarea>
+          <label>Your Message</label>
+        </div>
+
+        <button type="submit" class="contact-btn">
+          <span class="btn-text">Send Message</span>
+          <span class="spinner"></span>
+        </button>
+
+      </form>
+  </div>
+</section>  -->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+
+    <h2 class="contact-title">LET’S WORK TOGETHER</h2>
+    <p class="contact-subtitle">
+      For bookings, collaborations, interviews or brand partnerships.
+    </p>
+
+    <div class="contact-grid">
+
+      <!-- LEFT SIDE INFO -->
+      <!-- <div class="contact-info">
+
+        <div class="info-box">
+          <h3>Booking</h3>
+          <a href="https://wa.me/2348012345678" target="_blank" class="btn whatsapp">Chat on WhatsApp</a>
+          <p>Email: <a href="mailto:bookings@yourname.com">bookings@yourname.com</a></p>
+          <p>Phone: +234 801 234 5678</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Management</h3>
+          <p>Manager: John Doe</p>
+          <p>Email: management@yourname.com</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Available For</h3>
+          <ul>
+            <li>✔ Live Shows</li>
+            <li>✔ Brand Collaborations</li>
+            <li>✔ Interviews</li>
+            <li>✔ Music Features</li>
+          </ul>
+        </div>
+
+        <div class="info-box">
+          <h3>Location</h3>
+          <p>Based in Lagos, Nigeria</p>
+          <p>Available for travel worldwide</p>
+        </div>
+
+        <a href="#" class="btn epk">Download Press Kit</a>
+
+      </div> -->
+      <div class="contact-info glow-card">
+
+<div class="contact-info">
+
+  <div class="info-card">
+    <div class="card-icon">🎤</div>
+    <div class="card-content">
+      <h3>Booking</h3>
+      <p>Chat directly for shows & collaborations.</p>
+      <a href="https://wa.me/2348012345678" target="_blank" class="mini-btn">
+        WhatsApp
+      </a>
+      <span>bookings@yourname.com</span>
+    </div>
+  </div>
+
+  <div class="info-card">
+    <div class="card-icon">👔</div>
+    <div class="card-content">
+      <h3>Management</h3>
+      <p>John Doe</p>
+      <span>management@yourname.com</span>
+    </div>
+  </div>
+
+  <div class="info-card">
+    <div class="card-icon">🌍</div>
+    <div class="card-content">
+      <h3>Availability</h3>
+      <ul>
+        <li>Live Shows</li>
+        <li>Brand Collaborations</li>
+        <li>Interviews</li>
+        <li>Music Features</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+  <a href="#" class="btn epk full-btn">Download Press Kit</a>
+
+</div>
+
+      <!-- RIGHT SIDE FORM -->
+      <div class="contact-form glow-card">
+
+        <form>
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+
+          <select required>
+            <option value="">Type of Inquiry</option>
+            <option>Booking</option>
+            <option>Collaboration</option>
+            <option>Interview</option>
+            <option>General</option>
+          </select>
+
+          <input type="text" placeholder="Budget (Optional)">
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+
+          <button type="submit" class="btn submit-btn">Send Message</button>
+        </form>
+
+      </div>
+
+    </div>
+
   </div>
 </section>
 
-<footer class="modern-footer">
+<footer class="strong-footer">
   <div class="footer-inner">
 
+    <!-- Brand -->
     <div class="footer-brand">
       <h3>Artist Name</h3>
       <p>Music • Comedy • Entertainment</p>
     </div>
 
+    <!-- Links -->
     <div class="footer-links">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#music">Music</a>
+      <a href="#videos">Videos</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Newsletter (optional) -->
+    <div class="footer-newsletter">
+      <input type="email" placeholder="Subscribe for updates">
+      <button>Subscribe</button>
     </div>
 
   </div>
@@ -284,6 +447,11 @@
 <a href="#top" class="up-btn">
     <i class="uil uil-top-arrow-to-top"></i>
 </a>
+<!-- <a href="https://wa.me/234XXXXXXXXXX" 
+   class="whatsapp-float" 
+   target="_blank">
+   <i class="fa-brands fa-whatsapp"></i>
+</a> -->
 
 </div>
 
