@@ -47,21 +47,21 @@
     </ul>
 </nav>
 <section id="hero" class="hero">
+  <div class="hero-bg"></div>
   <div class="hero-content">
              <div class="hero-image">
       <!-- <img src="src/images/mars.jpeg" class="float-img img-left" alt="float-img img-left">
       <img src="src/images/mars.jpeg" class="float-img img-right" alt="floating-image"> -->
     </div>
-        <h1 class="reveal-text">
+        <h1 class="reveal-text" data-speed="0.2">
           <span>Musician</span>
           <span>•</span>
           <span>Comedian</span>
           <span>•</span>
           <span>Entertainer</span>
         </h1>
-      <p>Official Website</p>
-
-    <div class="btn-group">
+    <p data-speed="0.4">Official Website</p>
+    <div class="btn-group" data-speed="0.6">
     <button id="enterBtn" class="btn">Enter Experience</button>
     <audio id="introSound" src="src/images/am sorry.mp3"></audio>
     <a href="#music" class="btn">Listen Now</a>
@@ -70,8 +70,8 @@
 
     <div class="hero-icons">
       <!-- icons -->
-           <div class="hero-platforms">
-            <i class="fab fa-youtube"></i>
+      <div class="hero-platforms" data-speed="0.8">          
+          <i class="fab fa-youtube"></i>
             <i class="fab fa-apple"></i>
             <i class="fab fa-tiktok"></i>
             <i class="fas fa-music"></i>
@@ -402,18 +402,22 @@
 
   </div>
 </section>
-
 <footer class="strong-footer">
+
+  <div class="footer-glow-line"></div>
+
   <div class="footer-inner">
 
     <!-- Brand -->
     <div class="footer-brand">
-      <h3>Artist Name</h3>
+      <h2>Artist Name</h2>
       <p>Music • Comedy • Entertainment</p>
+      <p class="footer-tagline">Creating vibes. Making memories.</p>
     </div>
 
     <!-- Links -->
-    <div class="footer-links">
+    <div class="footer-column">
+      <h4>Explore</h4>
       <a href="#hero">Home</a>
       <a href="#about">About</a>
       <a href="#music">Music</a>
@@ -423,18 +427,84 @@
     </div>
 
     <!-- Social -->
-    <div class="footer-social">
+    <div class="footer-column">
+      <h4>Connect</h4>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <!-- <div class="footer-column newsletter-section">
+      <h4>Stay Updated</h4>
+      <div class="newsletter-wrapper">
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+    </div> -->
+
+
+    <div class="footer-newsletter">
+  <form id="newsletterForm">
+    <div class="newsletter-wrapper">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </div>
+    <p id="newsletterMessage"></p>
+  </form>
+</div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Artist Name. All rights reserved.
+  </div>
+
+</footer>
+
+<!-- <footer class="strong-footer">
+  <div class="footer-inner"> -->
+
+    <!-- Brand -->
+    <!-- <div class="footer-brand">
+      <h3>Artist Name</h3>
+      <p>Music • Comedy • Entertainment</p>
+    </div> -->
+
+    <!-- Links -->
+    <!-- <div class="footer-links"> -->
+      <!-- <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#music">Music</a>
+      <a href="#videos">Videos</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div> -->
+
+    <!-- Social -->
+    <!-- <div class="footer-social">
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-youtube"></i></a>
       <a href="#"><i class="fab fa-tiktok"></i></a>
       <a href="#"><i class="fas fa-envelope"></i></a>
-    </div>
+    </div> -->
 
     <!-- Newsletter (optional) -->
-    <div class="footer-newsletter">
+    <!-- <div class="footer-newsletter">
       <input type="email" placeholder="Subscribe for updates">
       <button>Subscribe</button>
+    </div> -->
+    <!-- <div class="footer-newsletter">
+  <form id="newsletterForm">
+    <div class="newsletter-wrapper">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
     </div>
+    <p id="newsletterMessage"></p>
+  </form>
+</div> -->
 
   </div>
 

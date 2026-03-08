@@ -197,3 +197,37 @@ profile.addEventListener('scroll', () => {
         scrollIndicator.style.opacity = '1';
     }
 });
+const form = document.getElementById("newsletterForm");
+const emailInput = document.getElementById("newsletterEmail");
+const message = document.getElementById("newsletterMessage");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const email = emailInput.value.trim();
+
+  if (!validateEmail(email)) {
+    message.style.color = "red";
+    message.textContent = "Please enter a valid email address.";
+    return;
+  }
+
+  message.style.color = "#00ff88";
+  message.textContent = "🎉 Subscribed successfully!";
+  emailInput.value = "";
+});
+
+function validateEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+window.addEventListener("scroll", function() {
+  const hero = document.querySelector(".hero");
+  const bg = hero.querySelector("::before");
+});
+
+window.addEventListener("scroll", function() {
+  const scrollY = window.scrollY;
+  const heroBg = document.querySelector(".hero-bg");
+
+  heroBg.style.transform = "translateY(" + scrollY * 0.5 + "px)";
+});
